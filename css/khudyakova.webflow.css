@@ -138,6 +138,7 @@ p {
   margin-bottom: 19px;
   padding: 18px 20px;
   border: 1px solid #dce6e4;
+  -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
   color: #333;
   text-decoration: none;
