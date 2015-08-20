@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   font-family: Roboto, sans-serif;
   color: #333;
   font-size: 14px;
@@ -77,14 +78,23 @@ p {
   background-position: 50% 100%;
 }
 .section {
+  height: 900px;
   padding-top: 65px;
   padding-bottom: 65px;
+  background-color: #525252;
 }
 .section.grey {
   background-color: #f0f0f0;
 }
 .section.green {
   background-color: #f2f7f6;
+}
+.section.hero {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  background-image: url('../images/khudyakova2.jpg');
+  background-size: cover;
 }
 .nav-link {
   display: block;
@@ -100,14 +110,18 @@ p {
   color: #949799;
 }
 .navigation {
-  position: fixed;
+  position: static;
+  left: 0px;
+  top: 0px;
   z-index: 10;
+  overflow-x: visible;
+  overflow-y: visible;
   margin-top: 250px;
   margin-left: -70px;
   padding: 35px 20px;
   border-top: 3px none white;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
 }
 .logo {
   margin-bottom: 22px;
@@ -131,7 +145,7 @@ p {
   margin-bottom: 26px;
   padding: 7px;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.01) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 1px;
 }
 .journal-entry {
   display: block;
@@ -167,6 +181,9 @@ p {
   background-color: #e3e3e3;
   color: black;
   text-align: center;
+}
+.lightbox {
+  padding: 20px;
 }
 @media (max-width: 991px) {
   .align-right {
